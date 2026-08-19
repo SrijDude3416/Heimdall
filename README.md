@@ -63,10 +63,13 @@ xcodegen generate
 open Heimdall.xcodeproj
 ```
 
-**
-YOU CAN ALSO JUST DOWNLOAD THE NOTARIZED, PRE-BUILT APP FILE DIRECTLY [Heimdall](https://github.com/SrijDude3416/Heimdall/tree/main/Exports/Heimdall%20v1.0)
-- Note that GitHub does not recognize the folder as an app, but when you download the repo to your Mac, the folder `Exports/Heimdall v1.0` will contain an app that you can open as-is. 
-**
+OR
+
+
+YOU CAN ALSO JUST DOWNLOAD THE NOTARIZED, PRE-BUILT APP FILE DIRECTLY @ [Heimdall](https://github.com/SrijDude3416/Heimdall/tree/main/Exports/Heimdall%20v1.0)
+- Note that GitHub does not recognize the folder as an app, but when you download the repo to your Mac, the folder `Exports/Heimdall v1.0` will contain an app that you can open as-is.
+
+
 In Xcode, go to the target's **Signing & Capabilities** tab and pick your own team under **Automatic signing**. Then build and run (⌘R), or archive it and drag the built `Heimdall.app` into `/Applications`.
 
 **Important:** once you've granted Accessibility/Input Monitoring permissions (see below), don't change your signing team or certificate — macOS ties those permission grants to the exact code-signing identity, and switching it will silently revoke them and you'll have to re-approve in System Settings.
