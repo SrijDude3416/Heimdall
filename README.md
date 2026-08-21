@@ -57,7 +57,7 @@ Heimdall is not sandboxed and is not distributed through the Mac App Store — i
 ## Building it
 
 ```bash
-git clone https://github.com/<you>/Heimdall.git
+git clone https://github.com/srijdude3416/Heimdall.git
 cd Heimdall
 xcodegen generate
 open Heimdall.xcodeproj
