@@ -54,20 +54,10 @@ None of these are Heimdall bugs — they're bypasses that either destroy the ses
 
 Heimdall is not sandboxed and is not distributed through the Mac App Store — it can't be, since blocking system-wide input and holding a power assertion both require capabilities the App Sandbox doesn't allow.
 
-## Building it
+## Using it
 
-```bash
-git clone https://github.com/srijdude3416/Heimdall.git
-cd Heimdall
-xcodegen generate
-open Heimdall.xcodeproj
-```
-
-OR
-
-
-YOU CAN ALSO JUST DOWNLOAD THE NOTARIZED, PRE-BUILT APP FILE DIRECTLY @ [Heimdall](https://github.com/SrijDude3416/Heimdall/tree/main/Exports/Heimdall%20v1.0)
-- Note that GitHub does not recognize the folder as an app, but when you download the repo to your Mac, the folder `Exports/Heimdall v1.0` will contain an app that you can open as-is.
+DOWNLOAD THE NOTARIZED, PRE-BUILT APP FILE DIRECTLY @ [Heimdall](https://github.com/SrijDude3416/Heimdall/tree/main/Exports/Heimdall%20v1.0)
+- Note that GitHub does not recognize the folder as an app, but when you download/clone the repo to your Mac, the folder `Exports/Heimdall v1.0` will contain an app that you can open as-is.
 
 
 In Xcode, go to the target's **Signing & Capabilities** tab and pick your own team under **Automatic signing**. Then build and run (⌘R), or archive it and drag the built `Heimdall.app` into `/Applications`.
